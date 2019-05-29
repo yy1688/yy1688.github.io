@@ -106,7 +106,7 @@
 
     window.onload = function () {
         var postID = request("postid");
-        $('#external-frame').attr("src","post/"+postID+".html");  
+        $('#external-frame').attr("src","post/"+postID+".html?time="+Date().getTime().toString());  
         var main_title = $('#external-frame').contents().attr("title");
         $(document).attr("title", main_title);
         $('#main_article_title_id').html(main_title)
