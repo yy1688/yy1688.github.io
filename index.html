@@ -110,7 +110,7 @@
         var timeStr = newTime.getTime().toString();
         $('#external-frame').attr("src", "post/"+postID+".html?time="+timeStr);
         console.log($('#external-frame').attr("src"));
-        var main_title = $('#external-frame').contents().attr("title");
+        var main_title = $('#external-frame').contents().find("title").html();
         console.log(main_title);
         $(document).attr("title", main_title);
         $('#main_article_title_id').html(main_title);
