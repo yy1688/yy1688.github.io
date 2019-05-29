@@ -54,7 +54,7 @@
         <!--读取文章内容-->
         <p><span style="color: rgb(153, 153, 153); font-size: 0.75em;">来源｜网络</span><br></p>
         <!--文章内容开始-->
-        <iframe src="post/052901.html" frameborder="0" scrolling="no" id="external-frame" onload="setIframeHeight(this)"></iframe>
+        <iframe src="" frameborder="0" scrolling="no" id="external-frame" onload="setIframeHeight(this)"></iframe>
         <!--文章内容结束-->
         <div class="showall"><p><i class="iconfont">&#xe608;</i>阅读全部</p></div>
     </div>
@@ -88,8 +88,26 @@
             }
         }
     };
+    
+    function request(paras){ 
+        var url = location.href; 
+        var paraString = url.substring(url.indexOf("?")+1,url.length).split("&"); 
+        var paraObj = {} 
+        for (i=0; j=paraString[i]; i++){ 
+        	paraObj[j.substring(0,j.indexOf("=")).toLowerCase()] = j.substring(j.indexOf("=")+1,j.length); 
+        } 
+        var returnValue = paraObj[paras.toLowerCase()]; 
+        if(typeof(returnValue)=="undefined"){ 
+        	return ""; 
+        }else{ 
+        	return returnValue; 
+        } 
+    };
 
     window.onload = function () {
+        var postID = request("postid");
+        $('#external-frame').attr("src","post/"+postID+".html");  
+
         setIframeHeight(document.getElementById('external-frame'));
     };
 </script>
