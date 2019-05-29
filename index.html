@@ -9,7 +9,7 @@
 <link href="css/main.css" type="text/css" rel="stylesheet" />
 <script src="https://apps.bdimg.com/libs/jquery/1.8.0/jquery.min.js"></script>
 
-            <title>个人征信修复知识，新版个人征信报告将上线 拖欠水费也可能影响信用</title>
+            <title></title>
         <link href="css/article.css" type="text/css" rel="stylesheet"/>
             <style>
             .g_home {
@@ -34,7 +34,7 @@
 <body class="g_flex">
 <div class="g_home">
     <div class="article_title">
-        <h2>个人征信修复知识，新版个人征信报告将上线 拖欠水费也可能影响信用</h2>
+        <h2 id="main_article_title_id"></h2>
         <div class="title_user">
             <div class="user">
                 <img src="img/header_big.jpeg">
@@ -107,6 +107,9 @@
     window.onload = function () {
         var postID = request("postid");
         $('#external-frame').attr("src","post/"+postID+".html");  
+        var main_title = $('#external-frame').contents().attr("title");
+        $(document).attr("title", main_title);
+        $('#main_article_title_id').html(main_title)
 
         setIframeHeight(document.getElementById('external-frame'));
     };
