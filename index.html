@@ -106,14 +106,13 @@
 
     window.onload = function () {
         var postID = request("postid");
-        $('#external-frame').attr("src","post/"+postID+".html?time="+(new Date()).getTime().toString());  
+        $('#external-frame').attr("src", "post/"+postID+".html?time="+(new Date()).getTime().toString());  
         
-        setTimeout(function () {
-            var main_title = $('#external-frame').contents().attr("title");
-            $(document).attr("title", main_title);
-            $('#main_article_title_id').html(main_title);
-            setIframeHeight(document.getElementById('external-frame'));
-        }, 500)
+        var main_title = $('#external-frame').contents().attr("title");
+        console.log(main_title)
+        $(document).attr("title", main_title);
+        $('#main_article_title_id').html(main_title);
+        setIframeHeight(document.getElementById('external-frame'));
     };
 </script>
 
