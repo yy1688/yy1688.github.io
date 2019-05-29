@@ -110,25 +110,15 @@
         var timeStr = newTime.getTime().toString();
         $('#external-frame').attr("src", "post/"+postID+".html?time="+timeStr);
 
-        $('#external-frame').get(0).onreadystatechange = function () {
-            switch ($('#external-frame').get(0).readyState) {
-                case "uninitialized":
-                    break;
-                case "loading":
-                    break;
-                case "loaded":
-                    break;
-                case "interactive":
-                    break;
-                case "complete":
-                    var main_title = $('#external-frame').contents().find("title").html();
-                    console.log(main_title);
-                    $(document).attr("title", main_title);
-                    $('#main_article_title_id').html(main_title);
-                    setIframeHeight(document.getElementById('external-frame'));
-                    break;
-            }
-        };
+        var iframe = document.getElementById("external-frame");
+        iframe.attachEvent("onload", function() {
+            console.log("iframe load finished");
+            var main_title = $('#external-frame').contents().find("title").html();
+            console.log(main_title);
+            $(document).attr("title", main_title);
+            $('#main_article_title_id').html(main_title);
+            setIframeHeight(document.getElementById('external-frame'));
+        });
     };
 </script>
 
