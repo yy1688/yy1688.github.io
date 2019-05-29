@@ -110,8 +110,8 @@
         var timeStr = newTime.getTime().toString();
         $('#external-frame').attr("src", "post/"+postID+".html?time="+timeStr);
 
-        $('#external-frame').onreadystatechange = function () {
-            switch ($('#external-frame').readyState) {
+        $('#external-frame').get(0).onreadystatechange = function () {
+            switch ($('#external-frame').get(0).readyState) {
                 case "uninitialized":
                     break;
                 case "loading":
