@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-cn">
+  <header>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://statics.itc.cn/mp/article-page/wap/css/main.css"
+    />
+    <title>小规模公司和一般纳税人的区别：税率大不同！</title>
+  </header>
+  <script>
+    !(function(a, b) {
+      function c() {
+        var b = f.getBoundingClientRect().width
+        b / i > 540 && (b = 540 * i)
+        var c = b / 10
+        ;(f.style.fontSize = c + 'px'), (k.rem = a.rem = c)
+      }
+      var d,
+        e = a.document,
+        f = e.documentElement,
+        g = e.querySelector('meta[name="viewport"]'),
+        h = e.querySelector('meta[name="flexible"]'),
+        i = 0,
+        j = 0,
+        k = b.flexible || (b.flexible = {})
+      if (g) {
+        var l = g.getAttribute('content').match(/initial\-scale=([\d\.]+)/)
+        l && ((j = parseFloat(l[1])), (i = parseInt(1 / j)))
+      } else {
+        if (h) {
+          var m = h.getAttribute('content')
+          if (m) {
+            var n = m.match(/initial\-dpr=([\d\.]+)/),
+              o = m.match(/maximum\-dpr=([\d\.]+)/)
+            n && ((i = parseFloat(n[1])), (j = parseFloat((1 / i).toFixed(2)))),
+              o &&
+                ((i = parseFloat(o[1])), (j = parseFloat((1 / i).toFixed(2))))
+          }
+        }
+      }
+      var isIos = a.navigator.appVersion.match(/iphone/gi)
+      if (isIos) {
+        f.setAttribute('class', 'ios')
+      } else {
+        f.setAttribute('class', 'android')
+      }
+      if (!i && !j) {
+        var p = (a.navigator.appVersion.match(/android/gi),
+          a.navigator.appVersion.match(/iphone/gi)),
+          q = a.devicePixelRatio
+        ;(i = p
+          ? q >= 3 && (!i || i >= 3)
+            ? 3
+            : q >= 2 && (!i || i >= 2)
+            ? 2
+            : 1
+          : 1),
+          (j = 1 / i)
+      }
+      if ((f.setAttribute('data-dpr', i), !g)) {
+        if (
+          ((g = e.createElement('meta')),
+          g.setAttribute('name', 'viewport'),
+          g.setAttribute(
+            'content',
+            'initial-scale=' +
+              j +
+              ', maximum-scale=' +
+              j +
+              ', minimum-scale=' +
+              j +
+              ', user-scalable=no'
+          ),
+          f.firstElementChild)
+        ) {
+          f.firstElementChild.appendChild(g)
+        } else {
+          var r = e.createElement('div')
+          r.appendChild(g), e.write(r.innerHTML)
+        }
+      }
+      a.addEventListener(
+        'resize',
+        function() {
+          clearTimeout(d), (d = setTimeout(c, 300))
+        },
+        !1
+      ),
+        a.addEventListener(
+          'pageshow',
+          function(a) {
+            a.persisted && (clearTimeout(d), (d = setTimeout(c, 300)))
+          },
+          !1
+        ),
+        'complete' === e.readyState
+          ? (e.body.style.fontSize = 12 * i + 'px')
+          : e.addEventListener(
+              'DOMContentLoaded',
+              function() {
+                e.body.style.fontSize = 12 * i + 'px'
+              },
+              !1
+            ),
+        c(),
+        (k.dpr = a.dpr = i),
+        (k.refreshRem = c),
+        (k.rem2px = function(a) {
+          var b = parseFloat(a) * this.rem
+          return 'string' == typeof a && a.match(/rem$/) && (b += 'px'), b
+        }),
+        (k.px2rem = function(a) {
+          var b = parseFloat(a) / this.rem
+          return 'string' == typeof a && a.match(/px$/) && (b += 'rem'), b
+        })
+    })(window, window.lib || (window.lib = {}))
+  </script>
+
+  <div class="article-page" style="padding-top: 0!important;">
+    <!-- 文章页内容区块 -->
+    <div class="article-content-wrapper">
+      <div class="article-main">
+        <article data-spm="content">
+          <section id="articleContent" class="article-content">
+            <p>
+              今天悟空小编给大家介绍一下公司税务方面的事情。在税务上公司的划分最简单就是小规模跟一般纳税人。通俗的来讲小规模就是小户人家，一般纳税人就是大户人家。那他们有什么不同呢？今天小编就来给大家讲解一下。
+            </p>
+            <p class="ql-align-center">
+              <img
+                src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20190326/a5f4cebc55244b7cba5d4151a6140cbe.jpg"
+                max-width="600"
+                class="content-image"
+              />
+            </p>
+
+            <p><strong>1.体现在报税上面的不同</strong></p>
+            <p>
+              小规模：国税的增值税、企业所得税、文化事业建设费、消费税等都是按季申报的。（1月、4月、7月、10月为大家统称的大征期）
+            </p>
+            <p>地税的附加税季度申报、个人所得税每个月都要申报</p>
+            <p>
+              一般人：国税的增值税、文化事业建设费、消费税均是按月申报，只有企业所得税按季度申报。
+            </p>
+            <p>地税的附加税、个人所得税均是按月申报</p>
+            <p>
+              注意：企业所得税不是全部在国税，要根据税务所给企业核定的是国税还是地税而定。
+            </p>
+            <p><strong>2.体现在开票上面的不同</strong></p>
+            <p>
+              小规模只能开普票不能核定专票（除建筑业、鉴证咨询业、住宿业外。当然这个三个行业也要符合全国范围内月销售额超过3万元或季销售额超过9万元的规定才可以）其他的小规模企业可以用一证通在北京国税网上提交代开增值税专用发票申请，然后在去国税大厅把发票领出就可以了。
+            </p>
+            <p>
+              一般人既可以开专票也可以开普票。（当然需要提前在网上申请才可以买出发票来）
+            </p>
+            <p>
+              对于增值税一般纳税人来说，增值税专用发票可直接抵扣进项税额，也可以理解毕竟一般纳税人的税率高，可以抵扣进项是国家给的一个福利。可对小规模纳税人来说，专票是不可以抵扣的，所以悟空小编建议您如果您是小规模企业，不要让对方开太多的专票。
+            </p>
+            <p><strong>3.体现在税率上面的不同</strong></p>
+            <p>
+              小规模增值税征收率为3%、2%、5%（2+3=5）大部分企业均适用3%的征收率。应纳税所得额=当期销售额*征收率
+            </p>
+            <p>
+              增值税一般纳税人的税率为6%、10%、16%（6+10=16）当期应纳税额=当期销项税额-当期进项税额=销售额*税率-购进额*税率
+            </p>
+            <p>
+              当然只要符合税务上的规定小规模是可以转变成一般人的，一般人也可以转成小规模。企业可以根据自己的发展需求做出相应的改变。
+            </p>
+            <p>
+              悟空小编表示企业在成立之后会有很多税务方面的事情需要去操作，如今代理记账公司多已实现电脑做账，电脑报税，电脑开具发票，跟上了科技时代。现如今专业和正规的代理公司成为了各企业的首选。各位企业家可以委托专业、正规的代理机构为企业保驾护航。
+            </p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </div>
+</html>
