@@ -1,231 +1,266 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta content="telephone=no" name="format-detection"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link href="css/main.css" type="text/css" rel="stylesheet"/>
-    <link href="https://at.alicdn.com/t/font_792340_fo8yfqfq3ik.css" type="text/css" rel="stylesheet"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://at.alicdn.com/t/font_792340_fo8yfqfq3ik.css"
+      type="text/css"
+      rel="stylesheet"
+    />
     <script src="https://apps.bdimg.com/libs/jquery/1.8.0/jquery.min.js"></script>
 
     <title></title>
-    <link href="css/article.css" type="text/css" rel="stylesheet"/>
+    <link href="css/article.css" type="text/css" rel="stylesheet" />
     <style>
-        .g_home {
-        / / 不能被选择 user-select: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-            -moz-user-select: none;
-        / / 禁用系统默认菜单 touch-callout: none;
-            -webkit-touch-callout: none;
-            -ms-touch-callout: none;
-            -moz-touch-callout: none;
-        }
+      .g_home {
+        /* 不能被选择 */
+        user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        /* 禁用系统默认菜单 */
+        touch-callout: none;
+        -webkit-touch-callout: none;
+        -ms-touch-callout: none;
+        -moz-touch-callout: none;
+      }
     </style>
     <script type="text/javascript">
-        function show_article() {
-            $(".article_main").css("height", "auto");
-            $(".article_main").css("max-height", "none");
-            $(".showall").hide();
-        };
+      function show_article() {
+        $('.article_main').css('height', 'auto')
+        $('.article_main').css('max-height', 'none')
+        $('.showall').hide()
+      }
     </script>
-</head>
-<body class="g_flex">
-<div class="g_home">
-    <div class="article_title">
+  </head>
+  <body class="g_flex">
+    <div class="g_home">
+      <div class="article_title">
         <h2 id="main_article_title_id"></h2>
         <div class="title_user">
-            <div class="user">
-                <img src="img/header_big.jpeg">
-                <div class="info">
-                    <p><b>悠悠 15652440555 </b><span> 推荐您阅读</span></p>
-                    <div class="card">
-                        <i onclick="show_tel()" class="iconfont">&#xe649;</i>
-                        <i onclick="show_qrcode()" class="iconfont">&#xe63a;</i>
-                    </div>
-                </div>
+          <div class="user">
+            <img src="img/header_big.jpeg" />
+            <div class="info">
+              <p><b>悠悠 15652440555 </b><span> 推荐您阅读</span></p>
+              <div class="card">
+                <i onclick="show_tel()" class="iconfont">&#xe649;</i>
+                <i onclick="show_qrcode()" class="iconfont">&#xe63a;</i>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!--文章内容区-->
-    <div class="article_main" onclick="show_article();">
+      <!--文章内容区-->
+      <div class="article_main" onclick="show_article();">
         <!--读取文章内容-->
-        <p><span style="color: rgb(153, 153, 153); font-size: 0.75em;">来源｜网络</span><br></p>
+        <p>
+          <span style="color: rgb(153, 153, 153); font-size: 0.75em;"
+            >来源｜网络</span
+          ><br />
+        </p>
         <!--文章内容开始-->
-        <iframe src="" frameborder="0" scrolling="no" id="external-frame" onload="setIframeHeight(this)"></iframe>
+        <iframe
+          src=""
+          frameborder="0"
+          scrolling="no"
+          id="external-frame"
+          onload="setIframeHeight(this)"
+        ></iframe>
         <!--文章内容结束-->
-        <div class="showall"><p><i class="iconfont">&#xe608;</i>阅读全部</p></div>
-    </div>
-    <!--文章声明（系统录入）-->
-    <div class="article_copyright">声明：本内容来源于网络，感谢原作者的辛苦创作！转载如涉及版权等问题，请与我们联系处理！</div>
-    <!--名片 -->
-    <div class="article_card">
-        <div class="face"><img src="img/header_big.jpeg"></div>
+        <div class="showall">
+          <p><i class="iconfont">&#xe608;</i>阅读全部</p>
+        </div>
+      </div>
+      <!--文章声明（系统录入）-->
+      <div class="article_copyright">
+        声明：本内容来源于网络，感谢原作者的辛苦创作！转载如涉及版权等问题，请与我们联系处理！
+      </div>
+      <!--名片 -->
+      <div class="article_card">
+        <div class="face"><img src="img/header_big.jpeg" /></div>
         <div class="user">
-            <h2>悠悠 15652440555</h2>
-            <h3>悠悠</h3>
-            <p>北京一六八八</p>
-            <div onclick="location='tel:15652440555'" class="tel">
-                <i class="iconfont">&#xe649;</i>
-                <span>15652440555</span>
+          <h2>悠悠 15652440555</h2>
+          <h3>悠悠</h3>
+          <p>北京一六八八</p>
+          <div onclick="location='tel:15652440555'" class="tel">
+            <i class="iconfont">&#xe649;</i>
+            <span>15652440555</span>
+          </div>
+          <div class="flex_box">
+            <div class="flex_item">
+              <i class="voteicon icon-yewushenqing"></i>
+              <div>公司注册</div>
             </div>
-            <div class="flex_box">
-                <div class="flex_item">
-                    <i class="voteicon icon-yewushenqing"></i>
-                    <div>公司注册</div>
-                </div>
-                <div class="flex_item">
-                    <i class="voteicon icon-tiaojianzhuanzhang"></i>
-                    <div>公司转让</div>
-                </div>
-                <div class="flex_item">
-                    <i class="voteicon icon-weidaizijinchiguijimingxichaxun"></i>
-                    <div>代理记账</div>
-                </div>
-                <div class="flex_item">
-                    <i class="voteicon icon-zhanghuzhifuxianeshezhi"></i>
-                    <div>公司注销</div>
-                </div>
-                <div class="flex_item">
-                    <i class="voteicon icon-zhanghujiaoyimingxifenxi"></i>
-                    <div>股权变更</div>
-                </div>
-                <div class="flex_item">
-                    <i class="voteicon icon-yewushenqingchexiao"></i>
-                    <div>公司变更</div>
-                </div>
-                <div class="flex_item">
-                    <i class="voteicon icon-qiyeyonghuguanli"></i>
-                    <div>教育培训</div>
-                </div>
-                <div class="flex_item">
-                    <i class="voteicon icon-zhongxinchengxinzhanghushezhi"></i>
-                    <div>征信异常</div>
-                </div>
+            <div class="flex_item">
+              <i class="voteicon icon-tiaojianzhuanzhang"></i>
+              <div>公司转让</div>
             </div>
+            <div class="flex_item">
+              <i class="voteicon icon-weidaizijinchiguijimingxichaxun"></i>
+              <div>代理记账</div>
+            </div>
+            <div class="flex_item">
+              <i class="voteicon icon-zhanghuzhifuxianeshezhi"></i>
+              <div>公司注销</div>
+            </div>
+            <div class="flex_item">
+              <i class="voteicon icon-zhanghujiaoyimingxifenxi"></i>
+              <div>股权变更</div>
+            </div>
+            <div class="flex_item">
+              <i class="voteicon icon-yewushenqingchexiao"></i>
+              <div>公司变更</div>
+            </div>
+            <div class="flex_item">
+              <i class="voteicon icon-qiyeyonghuguanli"></i>
+              <div>教育培训</div>
+            </div>
+            <div class="flex_item">
+              <i class="voteicon icon-zhongxinchengxinzhanghushezhi"></i>
+              <div>征信异常</div>
+            </div>
+          </div>
         </div>
         <div class="qrcode">
-            <img src="img/qrcode.jpg">
-            <p>长按二维码微信交流</p>
+          <img src="img/qrcode.jpg" />
+          <p>长按二维码微信交流</p>
         </div>
         <div class="company" style="width: 40vw;margin: 15px auto 5px auto;">
-            <img src="img/logo.png">
+          <img src="img/logo.png" />
         </div>
-    </div>
+      </div>
 
-    <!--版权-->
-</div>
-<style>
-    .flex_box {
+      <!--版权-->
+    </div>
+    <style>
+      .flex_box {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-    }
-    .flex_item {
+      }
+      .flex_item {
         min-width: 20vw;
         flex-grow: 1;
         padding-top: 8px;
         color: #09c;
-    }
-    .flex_item i {
-        font-size: 28px!important;
-    }
-</style>
-<script>
-    function setIframeHeight(iframe) {
+      }
+      .flex_item i {
+        font-size: 28px !important;
+      }
+    </style>
+    <script>
+      function setIframeHeight(iframe) {
         if (iframe) {
-            var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
-            if (iframeWin.document.body) {
-                iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
-            }
+          var iframeWin =
+            iframe.contentWindow || iframe.contentDocument.parentWindow
+          if (iframeWin.document.body) {
+            iframe.height =
+              iframeWin.document.documentElement.scrollHeight ||
+              iframeWin.document.body.scrollHeight
+          }
         }
-    };
+      }
 
-    function request(paras) {
-        var url = location.href;
-        var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+      function request(paras) {
+        var url = location.href
+        var paraString = url
+          .substring(url.indexOf('?') + 1, url.length)
+          .split('&')
         var paraObj = {}
-        for (i = 0; j = paraString[i]; i++) {
-            paraObj[j.substring(0, j.indexOf("=")).toLowerCase()] = j.substring(j.indexOf("=") + 1, j.length);
+        for (i = 0; (j = paraString[i]); i++) {
+          paraObj[j.substring(0, j.indexOf('=')).toLowerCase()] = j.substring(
+            j.indexOf('=') + 1,
+            j.length
+          )
         }
-        var returnValue = paraObj[paras.toLowerCase()];
-        if (typeof (returnValue) == "undefined") {
-            return "";
+        var returnValue = paraObj[paras.toLowerCase()]
+        if (typeof returnValue == 'undefined') {
+          return ''
         } else {
-            return returnValue;
+          return returnValue
         }
-    };
+      }
 
-    window.onload = function () {
-        var postID = request("postid");
-        var newTime = new Date();
-        var timeStr = newTime.getTime().toString();
-        var iFrame = $('#external-frame');
-        iFrame.attr("src", "post/" + postID + ".html?time=" + timeStr);
-        iFrame.load(function () {
-            var main_title = $('#external-frame').contents().find("title").html();
-            $(document).attr("title", main_title);
-            $('#main_article_title_id').html(main_title);
-            setIframeHeight(document.getElementById('external-frame'));
-        });
-    };
-</script>
+      window.onload = function() {
+        var postID = request('postid')
+        var newTime = new Date()
+        var timeStr = newTime.getTime().toString()
+        var iFrame = $('#external-frame')
+        iFrame.attr('src', 'post/' + postID + '.html?time=' + timeStr)
+        iFrame.load(function() {
+          var main_title = $('#external-frame')
+            .contents()
+            .find('title')
+            .html()
+          $(document).attr('title', main_title)
+          $('#main_article_title_id').html(main_title)
+          setIframeHeight(document.getElementById('external-frame'))
+        })
+      }
+    </script>
 
-<!--底部标签栏-->
-<div class="g_footer article_footer">
-    <li onclick="show_tel()"><i class="iconfont">&#xe649;</i></li>
-    <li onclick="show_qrcode()"><i class="iconfont">&#xe63a;</i></li>
-</div>
+    <!--底部标签栏-->
+    <div class="g_footer article_footer">
+      <li onclick="show_tel()"><i class="iconfont">&#xe649;</i></li>
+      <li onclick="show_qrcode()"><i class="iconfont">&#xe63a;</i></li>
+    </div>
 
-<!--弹出电话-->
-<script>
-    function show_tel() {
-        $("#qrcode_mask").hide();
-        $("#msg_mask").hide();
-        $("#tel_mask").slideToggle(200);
-    }
-</script>
-<div class="article_mask" id="tel_mask">
-    <div class="bg_mask"></div>
-    <div class="close" onclick="show_tel();">×</div>
-    <div class="block">
+    <!--弹出电话-->
+    <script>
+      function show_tel() {
+        $('#qrcode_mask').hide()
+        $('#msg_mask').hide()
+        $('#tel_mask').slideToggle(200)
+      }
+    </script>
+    <div class="article_mask" id="tel_mask">
+      <div class="bg_mask"></div>
+      <div class="close" onclick="show_tel();">×</div>
+      <div class="block">
         <div class="title">
-            <li class="select">悠悠 15652440555的电话</li>
+          <li class="select">悠悠 15652440555的电话</li>
         </div>
         <div class="content">
-            <ul>
-                <!--主要手机-->
-                <li onclick="location='tel:15652440555'"><i
-                        class="iconfont">&#xe649;</i><span>15652440555</span></li>
-            </ul>
+          <ul>
+            <!--主要手机-->
+            <li onclick="location='tel:15652440555'">
+              <i class="iconfont">&#xe649;</i><span>15652440555</span>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
-</div>
 
-<!--弹出二维码-->
-<script>
-    function show_qrcode() {
-        $("#tel_mask").hide();
-        $("#msg_mask").hide();
-        $("#qrcode_mask").slideToggle(200);
-    }
-</script>
-<div class="article_mask" id="qrcode_mask">
-    <div class="bg_mask"></div>
-    <div class="close" onclick="show_qrcode();">×</div>
-    <div class="block">
+    <!--弹出二维码-->
+    <script>
+      function show_qrcode() {
+        $('#tel_mask').hide()
+        $('#msg_mask').hide()
+        $('#qrcode_mask').slideToggle(200)
+      }
+    </script>
+    <div class="article_mask" id="qrcode_mask">
+      <div class="bg_mask"></div>
+      <div class="close" onclick="show_qrcode();">×</div>
+      <div class="block">
         <div class="title">
-            <li class="select">悠悠 15652440555的微信</li>
+          <li class="select">悠悠 15652440555的微信</li>
         </div>
         <div class="content">
-            <ul>
-                <img src="img/qrcode.jpg">
-            </ul>
+          <ul>
+            <img src="img/qrcode.jpg" />
+          </ul>
         </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
