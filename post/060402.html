@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-cn">
+  <header>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://statics.itc.cn/mp/article-page/wap/css/main.css"
+    />
+    <title>外卖行业也需要办理食品经营许可证吗</title>
+  </header>
+  <script>
+    !(function(a, b) {
+      function c() {
+        var b = f.getBoundingClientRect().width
+        b / i > 540 && (b = 540 * i)
+        var c = b / 10
+        ;(f.style.fontSize = c + 'px'), (k.rem = a.rem = c)
+      }
+      var d,
+        e = a.document,
+        f = e.documentElement,
+        g = e.querySelector('meta[name="viewport"]'),
+        h = e.querySelector('meta[name="flexible"]'),
+        i = 0,
+        j = 0,
+        k = b.flexible || (b.flexible = {})
+      if (g) {
+        var l = g.getAttribute('content').match(/initial\-scale=([\d\.]+)/)
+        l && ((j = parseFloat(l[1])), (i = parseInt(1 / j)))
+      } else {
+        if (h) {
+          var m = h.getAttribute('content')
+          if (m) {
+            var n = m.match(/initial\-dpr=([\d\.]+)/),
+              o = m.match(/maximum\-dpr=([\d\.]+)/)
+            n && ((i = parseFloat(n[1])), (j = parseFloat((1 / i).toFixed(2)))),
+              o &&
+                ((i = parseFloat(o[1])), (j = parseFloat((1 / i).toFixed(2))))
+          }
+        }
+      }
+      var isIos = a.navigator.appVersion.match(/iphone/gi)
+      if (isIos) {
+        f.setAttribute('class', 'ios')
+      } else {
+        f.setAttribute('class', 'android')
+      }
+      if (!i && !j) {
+        var p = (a.navigator.appVersion.match(/android/gi),
+          a.navigator.appVersion.match(/iphone/gi)),
+          q = a.devicePixelRatio
+        ;(i = p
+          ? q >= 3 && (!i || i >= 3)
+            ? 3
+            : q >= 2 && (!i || i >= 2)
+            ? 2
+            : 1
+          : 1),
+          (j = 1 / i)
+      }
+      if ((f.setAttribute('data-dpr', i), !g)) {
+        if (
+          ((g = e.createElement('meta')),
+          g.setAttribute('name', 'viewport'),
+          g.setAttribute(
+            'content',
+            'initial-scale=' +
+              j +
+              ', maximum-scale=' +
+              j +
+              ', minimum-scale=' +
+              j +
+              ', user-scalable=no'
+          ),
+          f.firstElementChild)
+        ) {
+          f.firstElementChild.appendChild(g)
+        } else {
+          var r = e.createElement('div')
+          r.appendChild(g), e.write(r.innerHTML)
+        }
+      }
+      a.addEventListener(
+        'resize',
+        function() {
+          clearTimeout(d), (d = setTimeout(c, 300))
+        },
+        !1
+      ),
+        a.addEventListener(
+          'pageshow',
+          function(a) {
+            a.persisted && (clearTimeout(d), (d = setTimeout(c, 300)))
+          },
+          !1
+        ),
+        'complete' === e.readyState
+          ? (e.body.style.fontSize = 12 * i + 'px')
+          : e.addEventListener(
+              'DOMContentLoaded',
+              function() {
+                e.body.style.fontSize = 12 * i + 'px'
+              },
+              !1
+            ),
+        c(),
+        (k.dpr = a.dpr = i),
+        (k.refreshRem = c),
+        (k.rem2px = function(a) {
+          var b = parseFloat(a) * this.rem
+          return 'string' == typeof a && a.match(/rem$/) && (b += 'px'), b
+        }),
+        (k.px2rem = function(a) {
+          var b = parseFloat(a) / this.rem
+          return 'string' == typeof a && a.match(/px$/) && (b += 'rem'), b
+        })
+    })(window, window.lib || (window.lib = {}))
+  </script>
+
+  <div class="article-page" style="padding-top: 0!important;">
+    <!-- 文章页内容区块 -->
+    <div class="article-content-wrapper">
+      <div class="article-main">
+        <article data-spm="content">
+          <section id="articleContent" class="article-content">
+            <p>
+              <img
+                src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20190529/156b726046884cec810dd065d0526ec1.jpeg"
+                max-width="600"
+                class="content-image"
+              />
+            </p>
+            <p>
+              近几年，外卖行业发展迅速。同样是餐饮，只是网上销售外卖行业也需要办理食品经营许可证吗？
+            </p>
+            <p>
+              答案是：是的。2019年1月1日起开始施行的《网络餐饮服务食品安全监督管理办法》中，对餐饮店做外卖有如下规定：
+            </p>
+            <p>
+              1
+              外卖平台中“线上线下一致”的原则，网络上销售的食品应当与实体店销售的餐饮食品在质量安全、品质等保持一致。
+            </p>
+            <p>
+              2
+              入驻外卖平台的餐饮服务提供者必须具有实体经营门店和食品经营许可证，这就意味着想做外卖的经营者必须有一个已登记的注册地址，且不能无证经营。
+            </p>
+            <p>
+              3
+              餐饮服务的提供者需要按照食品经营许可证载明的项目从事经营范围，不得超经营范围。
+            </p>
+            <p>以上就是小编对外卖行业办理食品经营许可证的介绍。</p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </div>
+</html>
