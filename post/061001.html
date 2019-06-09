@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-cn">
+  <header>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://statics.itc.cn/mp/article-page/wap/css/main.css"
+    />
+    <title>“我的企业被列入经营异常名录了，怎么办？”</title>
+  </header>
+  <script>
+    !(function(a, b) {
+      function c() {
+        var b = f.getBoundingClientRect().width
+        b / i > 540 && (b = 540 * i)
+        var c = b / 10
+        ;(f.style.fontSize = c + 'px'), (k.rem = a.rem = c)
+      }
+      var d,
+        e = a.document,
+        f = e.documentElement,
+        g = e.querySelector('meta[name="viewport"]'),
+        h = e.querySelector('meta[name="flexible"]'),
+        i = 0,
+        j = 0,
+        k = b.flexible || (b.flexible = {})
+      if (g) {
+        var l = g.getAttribute('content').match(/initial\-scale=([\d\.]+)/)
+        l && ((j = parseFloat(l[1])), (i = parseInt(1 / j)))
+      } else {
+        if (h) {
+          var m = h.getAttribute('content')
+          if (m) {
+            var n = m.match(/initial\-dpr=([\d\.]+)/),
+              o = m.match(/maximum\-dpr=([\d\.]+)/)
+            n && ((i = parseFloat(n[1])), (j = parseFloat((1 / i).toFixed(2)))),
+              o &&
+                ((i = parseFloat(o[1])), (j = parseFloat((1 / i).toFixed(2))))
+          }
+        }
+      }
+      var isIos = a.navigator.appVersion.match(/iphone/gi)
+      if (isIos) {
+        f.setAttribute('class', 'ios')
+      } else {
+        f.setAttribute('class', 'android')
+      }
+      if (!i && !j) {
+        var p = (a.navigator.appVersion.match(/android/gi),
+          a.navigator.appVersion.match(/iphone/gi)),
+          q = a.devicePixelRatio
+        ;(i = p
+          ? q >= 3 && (!i || i >= 3)
+            ? 3
+            : q >= 2 && (!i || i >= 2)
+            ? 2
+            : 1
+          : 1),
+          (j = 1 / i)
+      }
+      if ((f.setAttribute('data-dpr', i), !g)) {
+        if (
+          ((g = e.createElement('meta')),
+          g.setAttribute('name', 'viewport'),
+          g.setAttribute(
+            'content',
+            'initial-scale=' +
+              j +
+              ', maximum-scale=' +
+              j +
+              ', minimum-scale=' +
+              j +
+              ', user-scalable=no'
+          ),
+          f.firstElementChild)
+        ) {
+          f.firstElementChild.appendChild(g)
+        } else {
+          var r = e.createElement('div')
+          r.appendChild(g), e.write(r.innerHTML)
+        }
+      }
+      a.addEventListener(
+        'resize',
+        function() {
+          clearTimeout(d), (d = setTimeout(c, 300))
+        },
+        !1
+      ),
+        a.addEventListener(
+          'pageshow',
+          function(a) {
+            a.persisted && (clearTimeout(d), (d = setTimeout(c, 300)))
+          },
+          !1
+        ),
+        'complete' === e.readyState
+          ? (e.body.style.fontSize = 12 * i + 'px')
+          : e.addEventListener(
+              'DOMContentLoaded',
+              function() {
+                e.body.style.fontSize = 12 * i + 'px'
+              },
+              !1
+            ),
+        c(),
+        (k.dpr = a.dpr = i),
+        (k.refreshRem = c),
+        (k.rem2px = function(a) {
+          var b = parseFloat(a) * this.rem
+          return 'string' == typeof a && a.match(/rem$/) && (b += 'px'), b
+        }),
+        (k.px2rem = function(a) {
+          var b = parseFloat(a) / this.rem
+          return 'string' == typeof a && a.match(/px$/) && (b += 'rem'), b
+        })
+    })(window, window.lib || (window.lib = {}))
+  </script>
+
+  <div class="article-page" style="padding-top: 0!important;">
+    <!-- 文章页内容区块 -->
+    <div class="article-content-wrapper">
+      <div class="article-main">
+        <article data-spm="content">
+          <section id="articleContent" class="article-content">
+            <p>
+              “同志你好，前段时间工商来检查，说我企业的年报数据不实要列入经营异常名录，这可怎么办，会不会以后就不能去银行贷款了，听说还会被限制出行？我能不能马上修改，不要列入经营异常名录啊？”
+            </p>
+            <img
+              src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20190506/26d300c3501f46f08567bc86028a7e74.jpeg"
+              max-width="600"
+              class="content-image"
+            />
+            <p><strong>企业被列入经营异常名录了，这可怎么办？</strong></p>
+            <p>当你得知企业被列入经营异常名录时，是不是也曾一脸懵呢？</p>
+            <img
+              src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20190506/b484f4d751e743beb719a64bc381144a.jpeg"
+              max-width="600"
+              class="content-image"
+            />
+            <p>那怎么办呢？一般情况下企业被列入异常名录分为两种情况：</p>
+            <p><strong>一是被市监部门列入异常名录；</strong></p>
+            <p><strong>二是被税务部门列入异常名录。</strong></p>
+            <p>下面我们具体分析解答这两种情况！</p>
+            <p><strong>一、被市监列入经营异常名录</strong></p>
+            <p><strong>为什么会被列入异常名录？</strong></p>
+            <p>1、未按照《企业信息公示暂行条例》规定的期限公示年度报告。</p>
+            <p>2、未在市场监管部门责令的期限内公示有关企业信息。</p>
+            <p>3、公示企业信息隐瞒真实情况、弄虚作假。</p>
+            <p>4、地址异常。</p>
+            <p>
+              ❖
+              市监部门定期发送信函或是拨打电话到你的注册地址上的联系方式，如果信函没有被签收，或是电话总是无人接听，就可能会被列入地址异常。
+            </p>
+            <p>
+              ❖
+              市监部门工作人员到现场实地考察，如发现根本就无这个办公司的门牌号，或者是有门牌号，但是根本无此公司，那么也会将公司列入经营异常名录上。
+            </p>
+            <p><strong>被列入异常名录有什么影响？</strong></p>
+            <p>
+              1、影响法定代表人、股东、监事的个人征信，不允许买房、无法贷款、无法出国。
+            </p>
+            <p>2、公司后续无法变更或注销。</p>
+            <p>3、无法参与政府采购、工程招标。</p>
+            <p>4、银行信用、合同签约受限制。</p>
+            <p class="ql-align-center">
+              <img
+                max-width="600"
+                class="content-image"
+                data-src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20190506/a8211dc43b4249babad066f78a760927.webp"
+                src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20190506/a8211dc43b4249babad066f78a760927.webp"
+                data-lazy-load-completed="1"
+              />
+            </p>
+            <p><strong>如何申请移出异常名录？</strong></p>
+            <p><strong> 未按规定报送年度报告的企业</strong></p>
+            <p>
+              可以在补报未报年份的年度报告并公示后，申请移出经营异常名录，市监部门自收到申请后作出移出决定，恢复正常记载状态。
+            </p>
+            <p><strong>未按规定履行相关信息公示义务的企业</strong></p>
+            <p>
+              应当先履行其信息公示的义务，再申请恢复移出经营异常名录，市监部门收到申请后作出移出决定，恢复正常记载状态。
+            </p>
+            <p><strong>公示信息隐瞒真实情况、弄虚作假的企业</strong></p>
+            <p>更正公示的信息后，向市场监管部门申请移出经营异常名录。</p>
+            <p><strong>地址异常的企业</strong></p>
+            <p>
+              法定代表人和股东带上变更的新地址的相关资料去登记机关依法办理住所或者经营场所变更登记。
+            </p>
+            <p>
+              然后再去市监部门监管科，工作人员会再次核实，如果没有问题就可以移出异常。
+            </p>
+            <p><strong>二、被税务机关列入异常</strong></p>
+            <p>
+              现在好多公司成立下来以后，暂时不经营，也一直不申报，甚至连零申报都不做，企业负责人觉得肯定没毛病。
+            </p>
+            <p>
+              或者盲目注册后，因种种原因经营不下去，草草闲置没做注销，以为就这样结束了……
+            </p>
+            <p>其实不然，或许已经被税务机关列入了非正常户了。</p>
+            <p><strong>企业税务为什么会进入异常？ </strong></p>
+            <p>1、办理营业执照后，长期不开展经营活动，也不申报纳税。</p>
+            <p>2、企业与“走逃企业”有增值税专票发票往来，开具发票出现问题。</p>
+            <p>3、企业进行虚假纳税申报，规避税务主管机关审核与对比。</p>
+            <p>
+              4、企业真实信息与税务机关登记不符，存在隐瞒真实情况、弄虚作假而被列入经营异常。
+            </p>
+            <p>
+              上面这几点是企业被列入风险纳税人常见的原因。企业一旦被列入风险纳税人后，将受到税务主管机关的重点监控，企业的发票领购、发票的使用以及企业的抄税都进行限制，严重影响企业的正常经营。
+            </p>
+            <p><strong>企业税务异常该如何查询？</strong></p>
+            <p>
+              1、登录地市级以上税务机关的门户网站，填入相关信息即可查询。此外，办税服务厅公告栏也会定期不定期的发布“黑名单”信息。
+            </p>
+            <p>2、拨打12366 根据提示输入统一社会信用代码也可以查询。</p>
+            <p>
+              3、如果是公司纳税情况异常导致被列入非正常户拉入黑名单，需联系公司的税务专管员查询具体黑名单的有关事宜。
+            </p>
+            <p><strong>企业列入非正常户咋处理？ </strong></p>
+            <p>
+              1、企业负责人需先与企业所在区域的税管专员联系，确认企业被列入风险异常的原因；
+            </p>
+            <p>
+              2、了解原因后，按照相关要求进行资料准备，比如企业未按时进行纳税申报；
+            </p>
+            <p>
+              3、企业将相关资料准备齐全后并提交到办税厅，办税人员将对报送资料进行核对并受理，如资料是否齐全、是否符合相关法定形式；
+            </p>
+            <p>
+              4、税务相关部门核实企业情况后，企业按照要求补交纳税申报、补缴税款、滞纳金、罚款；
+            </p>
+            <p>
+              5、办税服务厅根据反馈情况，在企业补交纳税申报、税款、滞纳金、罚款后，解除纳税人税务异常状态。
+            </p>
+            <p><strong>【提醒】</strong></p>
+            <p>要重视企业信用！</p>
+            <p>
+              如果发现企业被列入经营异常名录，要及时纠正并移出，不然，被列入经营异常名录届满3年仍未履行相关义务，就会进入“黑名单”，进了“黑名单”5年内不能随意移出~
+            </p>
+            <p class="ql-align-center">
+              <img
+                max-width="600"
+                class="content-image"
+                data-src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20190506/9f3b4fa163cf468f876dd3fda94ba21b.webp"
+                src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20190506/9f3b4fa163cf468f876dd3fda94ba21b.webp"
+                data-lazy-load-completed="1"
+              />
+            </p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </div>
+</html>
