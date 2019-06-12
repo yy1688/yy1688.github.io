@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-cn">
+  <header>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://statics.itc.cn/mp/article-page/wap/css/main.css"
+    />
+    <title>50元存单被篡改成50万？他狂骗3000万</title>
+  </header>
+  <script>
+    !(function(a, b) {
+      function c() {
+        var b = f.getBoundingClientRect().width
+        b / i > 540 && (b = 540 * i)
+        var c = b / 10
+        ;(f.style.fontSize = c + 'px'), (k.rem = a.rem = c)
+      }
+      var d,
+        e = a.document,
+        f = e.documentElement,
+        g = e.querySelector('meta[name="viewport"]'),
+        h = e.querySelector('meta[name="flexible"]'),
+        i = 0,
+        j = 0,
+        k = b.flexible || (b.flexible = {})
+      if (g) {
+        var l = g.getAttribute('content').match(/initial\-scale=([\d\.]+)/)
+        l && ((j = parseFloat(l[1])), (i = parseInt(1 / j)))
+      } else {
+        if (h) {
+          var m = h.getAttribute('content')
+          if (m) {
+            var n = m.match(/initial\-dpr=([\d\.]+)/),
+              o = m.match(/maximum\-dpr=([\d\.]+)/)
+            n && ((i = parseFloat(n[1])), (j = parseFloat((1 / i).toFixed(2)))),
+              o &&
+                ((i = parseFloat(o[1])), (j = parseFloat((1 / i).toFixed(2))))
+          }
+        }
+      }
+      var isIos = a.navigator.appVersion.match(/iphone/gi)
+      if (isIos) {
+        f.setAttribute('class', 'ios')
+      } else {
+        f.setAttribute('class', 'android')
+      }
+      if (!i && !j) {
+        var p = (a.navigator.appVersion.match(/android/gi),
+          a.navigator.appVersion.match(/iphone/gi)),
+          q = a.devicePixelRatio
+        ;(i = p
+          ? q >= 3 && (!i || i >= 3)
+            ? 3
+            : q >= 2 && (!i || i >= 2)
+            ? 2
+            : 1
+          : 1),
+          (j = 1 / i)
+      }
+      if ((f.setAttribute('data-dpr', i), !g)) {
+        if (
+          ((g = e.createElement('meta')),
+          g.setAttribute('name', 'viewport'),
+          g.setAttribute(
+            'content',
+            'initial-scale=' +
+              j +
+              ', maximum-scale=' +
+              j +
+              ', minimum-scale=' +
+              j +
+              ', user-scalable=no'
+          ),
+          f.firstElementChild)
+        ) {
+          f.firstElementChild.appendChild(g)
+        } else {
+          var r = e.createElement('div')
+          r.appendChild(g), e.write(r.innerHTML)
+        }
+      }
+      a.addEventListener(
+        'resize',
+        function() {
+          clearTimeout(d), (d = setTimeout(c, 300))
+        },
+        !1
+      ),
+        a.addEventListener(
+          'pageshow',
+          function(a) {
+            a.persisted && (clearTimeout(d), (d = setTimeout(c, 300)))
+          },
+          !1
+        ),
+        'complete' === e.readyState
+          ? (e.body.style.fontSize = 12 * i + 'px')
+          : e.addEventListener(
+              'DOMContentLoaded',
+              function() {
+                e.body.style.fontSize = 12 * i + 'px'
+              },
+              !1
+            ),
+        c(),
+        (k.dpr = a.dpr = i),
+        (k.refreshRem = c),
+        (k.rem2px = function(a) {
+          var b = parseFloat(a) * this.rem
+          return 'string' == typeof a && a.match(/rem$/) && (b += 'px'), b
+        }),
+        (k.px2rem = function(a) {
+          var b = parseFloat(a) / this.rem
+          return 'string' == typeof a && a.match(/px$/) && (b += 'rem'), b
+        })
+    })(window, window.lib || (window.lib = {}))
+  </script>
+
+  <div class="article-page" style="padding-top: 0!important;">
+    <!-- 文章页内容区块 -->
+    <div class="article-content-wrapper">
+      <div class="article-main">
+        <article data-spm="content">
+          <section id="articleContent" class="article-content">
+            <p>最近，有不法分子瞄准了银行的贷款业务。</p>
+            <p>
+              通常，银行的各类存款数据个人是不能随意修改的，但是近日，上海警方就破获了一起贷款诈骗案，犯罪嫌疑人通过篡改存款金额骗取了巨额贷款。
+            </p>
+            <p>
+              而其中一名叫马某的犯罪嫌疑人，在短短半年间，从负债累累摇身一变，成了住别墅、开豪车的有钱人......
+            </p>
+            <p>篡改存单骗贷款</p>
+            <p>50元变50万元</p>
+            <p>△央视财经《经济信息联播》</p>
+            <p>
+              <img
+                src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20190611/a5fc2965541b4b53b9cec695637c64bc.jpeg"
+                class="content-image"
+              />
+            </p>
+            <p>
+              上海市公安局松江分局刑侦支队反电诈队队长
+              陈琦：我们接到银行报警，有张银行卡有虚开存款单、套取银行贷款的情况，从他们统计的这一张银行卡，涉案金额一共是300多万。
+            </p>
+            <p>
+              据银行工作人员介绍，只要有这家银行没有到期的定期存单，就能在线申请不超过存单金额的90%的贷款。
+            </p>
+            <p>
+              可是，到了2018年9月底，该银行上海松江支行工作人员却发现，有人利用银行安全漏洞，篡改了账户内的存款数额，进而骗取大额贷款，50元存单就骗取了近50万元贷款。
+            </p>
+            <p>
+              <img
+                src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20190611/c869da62faf84dc6a7639c64838186b3.jpeg"
+                class="content-image"
+              />
+            </p>
+            <p>
+              接到报警后，上海松江警方立即成立专案组展开调查。经过统计，民警发现共有五个账户涉嫌用同一手法来骗取贷款，总涉及贷款金额约3000万元。
+            </p>
+            <p>
+              <img
+                src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20190611/75f54be97abc425ba9ef83893b4c4d70.jpeg"
+                class="content-image"
+              />
+            </p>
+            <p>
+              经过进一步调查，警方发现，有人冒用身份获取了这些银行账户，通过银行流水单，警方锁定了一名嫌疑人。这名年轻男子多次驾车前往银行存款，但每次都只存了200元。
+            </p>
+            <p>通过大量的视频追踪工作，民警发现了嫌疑人的行动规律。</p>
+            <p>
+              <img
+                src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20190611/d32f727ec3af40378e83b498b14b8911.jpeg"
+                class="content-image"
+              />
+            </p>
+            <p>
+              掌握这名嫌疑人的身份后，专案组民警针对其名下的房产、车辆及其银行卡资金进行进一步的梳理，发现了另外三名嫌疑人，随即将四人同时抓捕。
+            </p>
+            <p>诈骗贷款百余次</p>
+            <p>金额近3000万元</p>
+
+            <p>
+              通过对四名嫌疑人的讯问，警方发现，其中一名叫马某的男子，一直在暗中指挥着其他人，而马某则在短短半年间，从负债累累摇身一变成了有钱人。
+            </p>
+            <p>
+              面对民警提出的问题，犯罪嫌疑人马某最终如实交代了他利用银行漏洞进行贷款诈骗的行为。
+            </p>
+            <p>
+              <img
+                src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20190611/e906db22d09a4491bd9abe5e178b5b54.jpeg"
+                class="content-image"
+              />
+            </p>
+            <p>
+              通过技术，马某把自己50元的定期存单篡改成了50万元，在网银上发起了定期存单质押的贷款申请。
+            </p>
+            <p>
+              令他没有想到的是这次修改竟然通过了银行的系统审核。自此，马某开始了他的犯罪之路。到被捕前，马某共诈骗贷款100多次，金额近3000万元。
+            </p>
+            <p>
+              <img
+                src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20190611/b34444a97ef941298288cdb73ec59ec5.jpeg"
+                class="content-image"
+              />
+            </p>
+            <p>
+              目前，犯罪嫌疑人马某因贷款诈骗罪已被上海市松江区人民检察院批准逮捕。案件还在进一步审理中。
+            </p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </div>
+</html>
