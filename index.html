@@ -211,7 +211,7 @@
         var newTime = new Date()
         var timeStr = newTime.getTime().toString()
         var iFrame = $('#external-frame')
-        iFrame.attr('src', 'post/' + postID + '.html?time=' + timeStr)
+        iFrame.attr('src', 'archive/' + postID + '.html?time=' + timeStr)
         iFrame.load(function() {
           var main_title = $('#external-frame')
             .contents()
