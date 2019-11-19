@@ -294,8 +294,8 @@
           title: '标题测试', // 分享标题
           link: 'https://yyblog.vip/?postid=0612/2', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
           imgUrl: 'https://yyblog.vip/img/header_big.jpg', // 分享图标
-          success: function () {
-            // 设置成功
+          success: function (res) {
+            console.log(res);
           }
         })
       });
