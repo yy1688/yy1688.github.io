@@ -402,8 +402,9 @@ Set the variable values in _variables.scss
 Page structure and elements 
 **/
 body {
-  background-size: 100vw 100vh;
+  background-size: 100vw 120vh;
   background-attachment: fixed;
+  background-repeat:no-repeat;
   background-color: #CFCFCF;
   background-image: linear-gradient(to bottom, #CFCFCF, #D4D5D6 , #ACAAAA);
   font-family: "Raleway", Arial, "sans-serif";
