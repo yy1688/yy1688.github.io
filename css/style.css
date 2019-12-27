@@ -402,15 +402,23 @@ Set the variable values in _variables.scss
 Page structure and elements 
 **/
 body {
-  background-size: 100vw 120vh;
-  background-attachment: fixed;
-  background-repeat:no-repeat;
-  background-color: #CFCFCF;
-  background-image: linear-gradient(to bottom, #CFCFCF, #D4D5D6 , #ACAAAA);
   font-family: "Raleway", Arial, "sans-serif";
   color: #999;
   font-size: 2rem;
   line-height: 1.2em; }
+
+  body:before{
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #CFCFCF;
+    background-image: linear-gradient(to bottom, #CFCFCF, #D4D5D6 , #ACAAAA);
+    background-size: 100% 100%;
+}
 
 .wrapper {
   margin-right: 65%;
