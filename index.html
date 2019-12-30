@@ -60,7 +60,7 @@
         <script type="text/javascript">	
             $.post("https://api.yyblog.vip/wx/config",
             {
-                url:"https://yyblog.vip/"
+                url: window.location.href.split('#')[0]
             },
             function(data, status){
                 wx.config({
