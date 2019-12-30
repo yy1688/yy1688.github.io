@@ -69,16 +69,25 @@
                     timestamp: data.timestamp,
                     nonceStr: data.nonceStr,
                     signature: data.signature,
-                    jsApiList: ['updateTimelineShareData']
+                    jsApiList: ['updateTimelineShareData', 'updateAppMessageShareData']
                 });
                 wx.ready(function(){
                     wx.updateTimelineShareData({ 
-                    title: '么悠悠博客',
-                    link: data.url,
-                    imgUrl: 'https://yyblog.vip/img/header_big.jpg',
-                    success: function (res) {
-                        console.log(res);
-                    }
+                        title: '么悠悠博客',
+                        link: data.url,
+                        imgUrl: 'https://yyblog.vip/img/header_big.jpg',
+                        success: function (res) {
+                            console.log(res);
+                        }
+                    });
+                    wx.updateAppMessageShareData({ 
+                        title: '么悠悠博客',
+                        desc: '工商注册 企业服务 知识分享',
+                        link: data.url,
+                        imgUrl: 'https://yyblog.vip/img/header_big.jpg',
+                        success: function (res) {
+                            console.log(res);
+                        }
                     })
                 });
             });
