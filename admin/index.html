@@ -20,8 +20,12 @@
                 {
                     url: $("#sohu_url").val()
                 },
-                function(data){
-                    console.log(data)
+                function(info_data){
+                    $.post("https://api.yyblog.vip/spider/write",
+                    info_data,
+                    function(write_data){
+                        console.log(write_data)
+                    });
                 });
             }
         </script type="text/javascript">
